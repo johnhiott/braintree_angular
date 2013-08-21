@@ -1,7 +1,6 @@
 var app = angular.module('test', []);
 
-
-  app.directive('creditcard', function(){
+app.directive('creditcard', function(){
   	return{
   		scope: true,
   		transclude: true,

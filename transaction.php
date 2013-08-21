@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 
 include ("lib/Braintree.php");
-include ("lib/braintreeconfig.php")
+include ("lib/braintreeconfig.php");
 
 $result = Braintree_Transaction::sale(array(
     "amount" => $_REQUEST["amount"],
@@ -31,6 +31,5 @@ if ($result->success) {
         echo("- " . $error->message . "<br/>");
     }
 }
-
 
 ?>
