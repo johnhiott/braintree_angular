@@ -1,0 +1,22 @@
+    <div>
+      <form action="transaction.php" method="" id="braintree-payment-form">
+         <p>
+          <label>Amount</label>
+          <input id="amount" type="text" size="20" autocomplete="off" data-encrypted-name="amount" />
+          <div id="erroramount"></div>
+        </p>
+        <p>
+          <label>Card Number</label>
+          <input id="number" type="text" size="20" autocomplete="off" />
+        </p>
+        <p>
+          <label>CVV</label>
+          <input id="cvv" type="text" size="4" autocomplete="off" data-encrypted-name="cvv" />
+        </p>
+        <p>
+          <label>Expiration (MM/YYYY)</label>
+          <input id="month" type="text" size="2" name="month" /> / <input id="year" type="text" size="4" name="year" />
+        </p>
+        <button ng-click="click()">Submit</button>
+      </form>
+    </div>
